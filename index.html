@@ -11,6 +11,28 @@
     <title>Hello, world!</title>
 </head>
 <body>
+<div class="col-md-9" style="margin-bottom: 20px">
+    <div class="input-group divs" tabindex="0">
+        <input id="searchText" type="text" class="form-control" style="border: 0px" placeholder="请输入搜索内容" autocomplete="off">
+        <span class="input-group-btn"> <button type="button" id="btnsearch" class="btn btn-success" onclick="btn()" style="border: 0px">搜索</button> </span>
+    </div>
+    <div class="main-radio" style="width: 500px;margin: 0 auto">
+        <input type="radio" value="0" name="check" onchange="test(this)" checked="">
+        <span>百度</span>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1" name="check" onchange="test(this)">
+        <span>谷歌</span>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="2" name="check" onchange="test(this)">
+        <span>必应</span>
+        <input type="radio" value="3" name="check" onchange="test(this)">
+        <span>极客</span>&nbsp;&nbsp;
+        <input type="radio" value="4" name="check" onchange="test(this)">
+        <span>github</span>&nbsp;&nbsp;
+        <input type="radio" value="5" name="check" onchange="test(this)">
+        <span>图片</span>&nbsp;&nbsp;
+        <input type="radio" value="6" name="check" onchange="test(this)">
+        <span>图标</span>&nbsp;&nbsp;
+    </div>
+</div>
 <main class="col-md-9 main-content">
     <div class="post">
         <div class="widget">
