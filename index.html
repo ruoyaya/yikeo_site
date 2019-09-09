@@ -10,9 +10,10 @@
 
     <title>个人网址大全!</title>
     <style type="text/css">
-        nav.navbar{border-bottom: 1px solid #eeeeee;}
+        .navbar{border-bottom: 1px solid #eeeeee;}
         .main-content .card {margin-top: 1rem;}
-        .main-content .card-header {background-color: inherit!important; padding: .5rem 1.25rem;}
+        .list-inline .list-inline-item a {font-size: 0.875rem; color: inherit;}
+        .list-inline .list-inline-item:first-child {font-size: 1rem; color: green;}
     </style>
 </head>
 <body>
@@ -29,7 +30,7 @@
         </ul>
     </div>
 </nav>
-<main role="main" class="container">
+<main role="main" class="container-fluid">
     <div class="search row mt-3">
         <div class="col-md-6 offset-md-3">
             <div class="input-group mb-1">
@@ -42,7 +43,7 @@
         <div class="col-md-6 offset-md-3">
             <div class="input-group m-1">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="searchUrlOptions" id="searchUrl1" value="https://www.baidu.com/s?wd=" checked="checked">
+                    <input class="form-check-input" type="radio" name="searchUrlOptions" id="searchUrl1" value="https://www.baidu.com/s?wd=">
                     <label class="form-check-label" for="searchUrl1">百度</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -67,127 +68,104 @@
 
     <main class="main-content">
         <div class="card">
-            <div class="card-header">
-                常用网站
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="https://www.baidu.com/" target="_blank">百度</a>
-                <a class="col-auto" href="https://www.google.com/" target="_blank">谷歌</a>
-                <a class="col-auto" href="https://cn.bing.com/" target="_blank">必应</a>
-                <a class="col-auto" href="https://stackoverflow.com/" target="_blank">Stackoverflow</a>
-                <a class="col-auto" href="https://segmentfault.com" target="_blank">Segmentfault</a>
-                <a class="col-auto" href="https://www.oschina.net/" target="_blank">开源中国</a>
-                <a class="col-auto" href="https://www.csdn.net/" target="_blank">CSDN</a>
-                <a class="col-auto" href="https://www.cnblogs.com/" target="_blank">博客园</a>
-                <a class="col-auto" href="https://juejin.im/" target="_blank">掘金</a>
-                <a class="col-auto" href="https://exmail.qq.com/cgi-bin/loginpage?t=dm_loginpage&amp;dmtype=bizmail" target="_blank">腾讯企业邮</a>
-                <a class="col-auto" href="https://mail.google.com/mail/" target="_blank">谷歌邮箱</a>
-                <a class="col-auto" href="https://mail.qq.com/" target="_blank">QQ邮箱</a>
-                <a class="col-auto" href="https://mail.163.com/" target="_blank">163邮箱</a>
-                <a class="col-auto" href="http://gank.io/" target="_blank">干货集中营</a>
-                <a class="col-auto" href="http://www.v2ex.com/" target="_blank">V2EX</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                互联网资讯
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="https://www.zhihu.com" target="_blank">知乎</a>
-                <a class="col-auto" href="http://36kr.com/" target="_blank">36氪</a>
-                <a class="col-auto" href="https://www.huxiu.com/" target="_blank">虎嗅网</a>
-                <a class="col-auto" href="http://www.guokr.com/" target="_blank">果壳网</a>
-                <a class="col-auto" href="https://toutiao.io/posts/hot/7" target="_blank">开发者头条</a>
-                <a class="col-auto" href="http://www.codeceo.com/" target="_blank">码农网</a>
-                <a class="col-auto" href="https://xiaozhuanlan.com" target="_blank">小专栏</a>
-                <a class="col-auto" href="http://www.jianshu.com/" target="_blank">简书</a>
-                <a class="col-auto" href="http://www.jobbole.com/" target="_blank">伯乐在线</a>
-                <a class="col-auto" href="https://readhub.cn/topics" target="_blank">Readhub</a>
-                <a class="col-auto" href="http://wwv.cyzone.cn/" target="_blank">创业邦</a>
-                <a class="col-auto" href="http://www.pmtown.com/" target="_blank">泡面小镇</a>
-                <a class="col-auto" href="https://sspai.com/" target="_blank">少数派</a>
-                <a class="col-auto" href="https://www.liaoxuefeng.com/" target="_blank">廖雪峰</a>
-                <a class="col-auto" href="http://www.jcodecraeer.com/" target="_blank">泡在网上的日子</a>
-                <a class="col-auto" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                <a class="col-auto" href="http://gank.io/" target="_blank">干货集中营</a>
-                <a class="col-auto" href="http://www.51cto.com/" target="_blank">51CTO</a>
-                <a class="col-auto" href="http://www.cyzone.cn/" target="_blank">创业邦</a>
-                <a class="col-auto" href="https://www.ifanr.com/" target="_blank">爱范儿</a>
-                <a class="col-auto" href="http://www.iheima.com/" target="_blank">i黑马</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                公司博客
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="https://tech.meituan.com/" target="_blank">美团点评</a>
-                <a class="col-auto" href="https://joyrun.github.io/" target="_blank">悦动圈</a>
-                <a class="col-auto" href="https://blog.klmobile.app/" target="_blank">网易考拉</a>
-                <a class="col-auto" href="https://tech.youzan.com/" target="_blank">有赞</a>
-                <a class="col-auto" href="http://jm.taobao.org/" target="_blank">阿里中间件</a>
-                <a class="col-auto" href="http://blogs.360.cn/" target="_blank">360</a>
-                <a class="col-auto" href="http://mux.baidu.com/case" target="_blank">百度移动体验部</a>
-                <a class="col-auto" href="http://tech.glowing.com/cn/" target="_blank">Glow</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                代码托管
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="http://www.github.com/" target="_blank">Github</a>
-                <a class="col-auto" href="http://git.oschina.net/" target="_blank">码云</a>
-                <a class="col-auto" href="https://coding.net/" target="_blank">Coding</a>
-                <a class="col-auto" href="https://bitbucket.org/" target="_blank">Bitbucket</a>
-                <a class="col-auto" href="https://about.gitlab.com/" target="_blank">Gitlab</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                学习平台
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="http://www.imooc.com/course/list?c=android" target="_blank">慕课网</a>
-                <a class="col-auto" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
-                <a class="col-auto" href="http://www.jikexueyuan.com/course/android/" target="_blank">极客学院</a>
-                <a class="col-auto" href="https://study.163.com/" target="_blank">网易云课堂</a>
-                <a class="col-auto" href="https://ke.qq.com/course/list?mt=1001&amp;st=2003&amp;tt=3021" target="_blank">腾讯课堂</a>
-                <a class="col-auto" href="https://love2.io/" target="_blank">技术电子书</a>
-                <a class="col-auto" href="https://www.shiyanlou.com/" target="_blank">实验楼</a>
-                <a class="col-auto" href="http://waitedu.51cto.com/" target="_blank">51CTO</a>
-                <a class="col-auto" href="https://gitbook.cn/gitchat/free" target="_blank">Gitchat</a>
-                <a class="col-auto" href="https://edu.csdn.net/" target="_blank">CSDN</a>
-                <a class="col-auto" href="http://www.maiziedu.com/" target="_blank">麦子学院</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                求职招聘
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="https://www.nowcoder.com/contestRoom" target="_blank">牛客网</a>
-                <a class="col-auto" href="https://leetcode-cn.com/" target="_blank">Leetcode</a>
-                <a class="col-auto" href="https://www.zhaopin.com/" target="_blank">智联招聘</a>
-                <a class="col-auto" href="https://www.51job.com" target="_blank">前程无忧</a>
-                <a class="col-auto" href="https://www.lagou.com/" target="_blank">拉钩网</a>
-                <a class="col-auto" href="https://www.liepin.com/" target="_blank">猎聘网</a>
-                <a class="col-auto" href="https://www.dajie.com/" target="_blank">大街网</a>
-                <a class="col-auto" href="https://cn.100offer.com/" target="_blank">100offer</a>
-                <a class="col-auto" href="https://www.zhipin.com/" target="_blank">Boss直聘</a>
-                <a class="col-auto" href="http://www.chinahr.com/" target="_blank">中华英才网</a>
-                <a class="col-auto" href="http://www.neitui.me/" target="_blank">内推网</a>
-                <a class="col-auto" href="https://job.csdn.net/search/index" target="_blank">csdn招聘</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                兼职网站
-            </div>
-            <div class="card-body row">
-                <a class="col-auto" href="https://www.proginn.com/cat/?type=4" target="_blank">程序员客栈</a>
-                <a class="col-auto" href="https://pro.lagou.com/project/" target="_blank">大鲲</a>
-                <a class="col-auto" href="https://shixian.com/" target="_blank">实现网</a>
+            <div class="card-body">
+                <ul class="list-inline">
+                    <li class="list-inline-item">常用网站</li>
+                    <li class="list-inline-item"><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com/" target="_blank">谷歌</a></li>
+                    <li class="list-inline-item"><a href="https://cn.bing.com/" target="_blank">必应</a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
+                    <li class="list-inline-item"><a href="https://segmentfault.com" target="_blank">Segmentfault</a></li>
+                    <li class="list-inline-item"><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>
+                    <li class="list-inline-item"><a href="https://www.csdn.net/" target="_blank">CSDN</a></li>
+                    <li class="list-inline-item"><a href="https://www.cnblogs.com/" target="_blank">博客园</a></li>
+                    <li class="list-inline-item"><a href="https://juejin.im/" target="_blank">掘金</a></li>
+                    <li class="list-inline-item"><a href="https://exmail.qq.com/cgi-bin/loginpage?t=dm_loginpage&amp;dmtype=bizmail" target="_blank">腾讯企业邮</a></li>
+                    <li class="list-inline-item"><a href="https://mail.google.com/mail/" target="_blank">谷歌邮箱</a></li>
+                    <li class="list-inline-item"><a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></li>
+                    <li class="list-inline-item"><a href="https://mail.163.com/" target="_blank">163邮箱</a></li>
+                    <li class="list-inline-item"><a href="http://gank.io/" target="_blank">干货集中营</a></li>
+                    <li class="list-inline-item"><a href="http://www.v2ex.com/" target="_blank">V2EX</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">互联网资讯</li>
+                    <li class="list-inline-item"><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
+                    <li class="list-inline-item"><a href="http://36kr.com/" target="_blank">36氪</a></li>
+                    <li class="list-inline-item"><a href="https://www.huxiu.com/" target="_blank">虎嗅网</a></li>
+                    <li class="list-inline-item"><a href="http://www.guokr.com/" target="_blank">果壳网</a></li>
+                    <li class="list-inline-item"><a href="https://toutiao.io/posts/hot/7" target="_blank">开发者头条</a></li>
+                    <li class="list-inline-item"><a href="http://www.codeceo.com/" target="_blank">码农网</a></li>
+                    <li class="list-inline-item"><a href="https://xiaozhuanlan.com" target="_blank">小专栏</a></li>
+                    <li class="list-inline-item"><a href="http://www.jianshu.com/" target="_blank">简书</a></li>
+                    <li class="list-inline-item"><a href="http://www.jobbole.com/" target="_blank">伯乐在线</a></li>
+                    <li class="list-inline-item"><a href="https://readhub.cn/topics" target="_blank">Readhub</a></li>
+                    <li class="list-inline-item"><a href="http://wwv.cyzone.cn/" target="_blank">创业邦</a></li>
+                    <li class="list-inline-item"><a href="http://www.pmtown.com/" target="_blank">泡面小镇</a></li>
+                    <li class="list-inline-item"><a href="https://sspai.com/" target="_blank">少数派</a></li>
+                    <li class="list-inline-item"><a href="https://www.liaoxuefeng.com/" target="_blank">廖雪峰</a></li>
+                    <li class="list-inline-item"><a href="http://www.jcodecraeer.com/" target="_blank">泡在网上的日子</a></li>
+                    <li class="list-inline-item"><a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a></li>
+                    <li class="list-inline-item"><a href="http://gank.io/" target="_blank">干货集中营</a></li>
+                    <li class="list-inline-item"><a href="http://www.51cto.com/" target="_blank">51CTO</a></li>
+                    <li class="list-inline-item"><a href="http://www.cyzone.cn/" target="_blank">创业邦</a></li>
+                    <li class="list-inline-item"><a href="https://www.ifanr.com/" target="_blank">爱范儿</a></li>
+                    <li class="list-inline-item"><a href="http://www.iheima.com/" target="_blank">i黑马</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">公司博客</li>
+                    <li class="list-inline-item"><a href="https://tech.meituan.com/" target="_blank">美团点评</a></li>
+                    <li class="list-inline-item"><a href="https://joyrun.github.io/" target="_blank">悦动圈</a></li>
+                    <li class="list-inline-item"><a href="https://blog.klmobile.app/" target="_blank">网易考拉</a></li>
+                    <li class="list-inline-item"><a href="https://tech.youzan.com/" target="_blank">有赞</a></li>
+                    <li class="list-inline-item"><a href="http://jm.taobao.org/" target="_blank">阿里中间件</a></li>
+                    <li class="list-inline-item"><a href="http://blogs.360.cn/" target="_blank">360</a></li>
+                    <li class="list-inline-item"><a href="http://mux.baidu.com/case" target="_blank">百度移动体验部</a></li>
+                    <li class="list-inline-item"><a href="http://tech.glowing.com/cn/" target="_blank">Glow</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">代码托管</li>
+                    <li class="list-inline-item"><a href="http://www.github.com/" target="_blank">Github</a></li>
+                    <li class="list-inline-item"><a href="http://git.oschina.net/" target="_blank">码云</a></li>
+                    <li class="list-inline-item"><a href="https://coding.net/" target="_blank">Coding</a></li>
+                    <li class="list-inline-item"><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
+                    <li class="list-inline-item"><a href="https://about.gitlab.com/" target="_blank">Gitlab</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">学习平台</li>
+                    <li class="list-inline-item"><a href="http://www.imooc.com/course/list?c=android" target="_blank">慕课网</a></li>
+                    <li class="list-inline-item"><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                    <li class="list-inline-item"><a href="http://www.jikexueyuan.com/course/android/" target="_blank">极客学院</a></li>
+                    <li class="list-inline-item"><a href="https://study.163.com/" target="_blank">网易云课堂</a></li>
+                    <a class="col-auto" href="https://ke.qq.com/course/list?mt=1001&amp;st=2003&amp;tt=3021"
+                       target="_blank">腾讯课堂</a>
+                    <li class="list-inline-item"><a href="https://love2.io/" target="_blank">技术电子书</a></li>
+                    <li class="list-inline-item"><a href="https://www.shiyanlou.com/" target="_blank">实验楼</a></li>
+                    <li class="list-inline-item"><a href="http://waitedu.51cto.com/" target="_blank">51CTO</a></li>
+                    <li class="list-inline-item"><a href="https://gitbook.cn/gitchat/free" target="_blank">Gitchat</a></li>
+                    <li class="list-inline-item"><a href="https://edu.csdn.net/" target="_blank">CSDN</a></li>
+                    <li class="list-inline-item"><a href="http://www.maiziedu.com/" target="_blank">麦子学院</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">求职招聘</li>
+                    <li class="list-inline-item"><a href="https://www.nowcoder.com/contestRoom" target="_blank">牛客网</a></li>
+                    <li class="list-inline-item"><a href="https://leetcode-cn.com/" target="_blank">Leetcode</a></li>
+                    <li class="list-inline-item"><a href="https://www.zhaopin.com/" target="_blank">智联招聘</a></li>
+                    <li class="list-inline-item"><a href="https://www.51job.com" target="_blank">前程无忧</a></li>
+                    <li class="list-inline-item"><a href="https://www.lagou.com/" target="_blank">拉钩网</a></li>
+                    <li class="list-inline-item"><a href="https://www.liepin.com/" target="_blank">猎聘网</a></li>
+                    <li class="list-inline-item"><a href="https://www.dajie.com/" target="_blank">大街网</a></li>
+                    <li class="list-inline-item"><a href="https://cn.100offer.com/" target="_blank">100offer</a></li>
+                    <li class="list-inline-item"><a href="https://www.zhipin.com/" target="_blank">Boss直聘</a></li>
+                    <li class="list-inline-item"><a href="http://www.chinahr.com/" target="_blank">中华英才网</a></li>
+                    <li class="list-inline-item"><a href="http://www.neitui.me/" target="_blank">内推网</a></li>
+                    <li class="list-inline-item"><a href="https://job.csdn.net/search/index" target="_blank">csdn招聘</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">兼职网站</li>
+                    <li class="list-inline-item"><a href="https://www.proginn.com/cat/?type=4" target="_blank">程序员客栈</a></li>
+                    <li class="list-inline-item"><a href="https://pro.lagou.com/project/" target="_blank">大鲲</a></li>
+                    <li class="list-inline-item"><a href="https://shixian.com/" target="_blank">实现网</a></li>
+                </ul>
             </div>
         </div>
     </main>
@@ -199,10 +177,41 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>
+
+    $(function(){
+        var form_search_check_id = readSettings("form_search_check_id", "searchUrl1");
+        if(form_search_check_id) {
+            $("#" + form_search_check_id).attr("checked", "checked");
+        }
+
+        $("#searchKeyWord").keyup(function(event){
+            if(event.keyCode === 13){
+                search();
+            }
+        });
+
+        $(".form-check-input").on('change', function(){
+            var searchCheckedId = $("input[name='searchUrlOptions']:checked").attr("id");
+            saveSettings("form_search_check_id", searchCheckedId);
+        });
+    });
+
     function search() {
         var keyWord = $("#searchKeyWord").val();
         var url = $("input[name='searchUrlOptions']:checked").val();
         window.open(url + keyWord);
+    }
+
+    function saveSettings(key, value){
+        $.cookie(key, value,{ expires:30, path:'/', secure:false });
+    }
+
+    function readSettings(key, defaultValue){
+        var val = $.cookie(key);
+        if(val === undefined) {
+            val = defaultValue;
+        }
+        return val;
     }
 </script>
 
